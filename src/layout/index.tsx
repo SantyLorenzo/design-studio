@@ -6,7 +6,7 @@ const Layout = () => {
         <div className='layout'>
             <section className="basic-information">
                 <div className='left'>
-                    <h1 className='name'>Santiago Lorenzo</h1>
+                    <h1 className='name'>Lorenzo design studio</h1>
                     <div className="links">
                         <NavLink to="/">Work</NavLink>
                         <NavLink to="/about">About</NavLink>

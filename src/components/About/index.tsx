@@ -3,7 +3,7 @@ import './styles.css'
 const About = () => {
     return (
         <section>
-            <p>Santiago Lorenzo researches and develops new (or weird) graphics in interactive media.</p>
+            <p>I do research and develop new (or weird) graphics in interactive media.</p>
         </section>
     )
 }
