@@ -1,12 +1,13 @@
 import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
-import { MathUtils } from "three";
+import { MathUtils, ShaderMaterial } from "three";
 import { vertexShader } from "./vertexShader";
 import { fragmentShader } from "./fragmentShader";
 
 export const Blob = () => {
   // This reference will give us direct access to the mesh
   const mesh = useRef<THREE.Mesh>(null);
+  
   const hover = useRef<boolean>(false);
 
   const uniforms = useMemo(() => ({
@@ -18,10 +19,10 @@ export const Blob = () => {
     const { clock } = state;
 
     if(mesh.current) {
-      mesh.current.material.uniforms.u_time.value = 0.4 * clock.getElapsedTime();
+      (mesh.current.material as THREE.ShaderMaterial).uniforms.u_time.value = 0.4 * clock.getElapsedTime();
   
-      mesh.current.material.uniforms.u_intensity.value = MathUtils.lerp(
-        mesh.current.material.uniforms.u_intensity.value,
+      (mesh.current.material as THREE.ShaderMaterial).uniforms.u_intensity.value = MathUtils.lerp(
+        (mesh.current.material as THREE.ShaderMaterial).uniforms.u_intensity.value,
         hover.current ? 0.85 : 0.15,
         0.02
       );
