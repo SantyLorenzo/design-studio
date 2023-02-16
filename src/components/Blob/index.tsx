@@ -42,7 +42,7 @@ export const Blob = () => {
         fragmentShader={fragmentShader}
         vertexShader={vertexShader}
         uniforms={uniforms}
-        wireframe={false}
+        wireframe
       />
     </mesh>
   );
