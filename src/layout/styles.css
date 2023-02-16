@@ -1,0 +1,47 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+    all: unset;
+    color: black;
+    font-size: 30px;
+}
+
+p {
+    margin: 0;
+    color: black;
+    font-size: 30px;
+}
+
+a {
+    color: black;
+    font-size: 30px;
+    margin-right: 16px;
+}
+
+a:hover {
+    color: #ea0001;
+}
+
+.basic-information {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.links {
+    display: flex;
+    margin-top: 100px;
+}
+
+
