@@ -4,7 +4,6 @@
 }
 
 h1 {
-    
     margin: 0;
     color: black;
     font-size: 90px;
@@ -13,7 +12,27 @@ h1 {
     animation-name: spin, depth;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 8s;
+    animation-duration: 30s;
+}
+
+h3 {
+    margin: 0;
+    color: black;
+    font-size: 90px;
+    width: max-content;
+
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+.deployed-at {
+    width: max-content;
+    animation-name: spinReverse, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 200s;
 }
 
 p {
@@ -56,6 +75,15 @@ a:hover {
     }
     to {
         transform: rotateY(360deg);
+    }
+}
+
+@keyframes spinReverse {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-180deg);
     }
 }
 
