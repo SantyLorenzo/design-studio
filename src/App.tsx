@@ -1,22 +1,17 @@
 import { BrowserRouter, createBrowserRouter, Route, Routes } from 'react-router-dom'
-import Layout from './layout'
-import About from './components/About'
 import './App.css'
-import BlobScene from './scenes/BlobScene'
+import Title from './components/Title'
+import DeployedAt from './components/DeployedAt'
 
 function App() {
   return (
-    <div className="app">
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<div />} />
-            <Route path="/about" element={<About />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-
-    </div>
+    <main className="app">
+      <section className="first-section">
+        <Title />
+        <DeployedAt />
+        <img className="img-wonder" src='/wonder.jpg' alt='wonder' />
+      </section>
+    </main>
   )
 }
 

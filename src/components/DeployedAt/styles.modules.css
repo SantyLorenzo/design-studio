@@ -1,0 +1,58 @@
+.container {
+    width: 50%;
+}
+
+p {
+    margin: 0;
+    color: black;
+    font-size: 30px;
+    width: max-content;
+    animation-name: rotateX, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF,
+        0 0 10px #FFF,
+        0 0 15px #FFF,
+        0 0 20px blue,
+        0 0 30px #49FF18,
+        0 0 40px #49FF18,
+        0 0 55px cyan,
+        0 0 75px violet;
+}
+
+.img-dog {
+    position: absolute;
+    animation-name: rotateX, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+@keyframes rotateX {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes depth {
+    0% {
+        text-shadow: 0 0 black;
+    }
+    25% {
+        text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+    }
+    50% {
+        text-shadow: 0 0 black;
+    }
+    75% {
+        text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
+    }
+    100% {
+        text-shadow: 0 0 black;
+    }
+  }

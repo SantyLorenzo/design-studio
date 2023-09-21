@@ -2,3 +2,15 @@
     display: flex;
     flex-direction: column;
 }
+
+.first-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-wonder {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+
+}

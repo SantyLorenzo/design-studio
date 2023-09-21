@@ -1,0 +1,69 @@
+.container {
+    width: 50%;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+    font-size: 90px;
+    width: max-content;
+    animation-name: rotateY, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF,
+        0 0 10px #FFF,
+        0 0 15px #FFF,
+        0 0 20px blue,
+        0 0 30px #49FF18,
+        0 0 40px #49FF18,
+        0 0 55px cyan,
+        0 0 75px violet;}
+
+h3 {
+    margin: 0;
+    color: black;
+    font-size: 90px;
+    width: max-content;
+    animation-name: rotateX, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF,
+        0 0 10px #FFF,
+        0 0 15px #FFF,
+        0 0 20px blue,
+        0 0 30px #49FF18,
+        0 0 40px #49FF18,
+        0 0 55px cyan,
+        0 0 75px violet;
+}
+
+.img-dark-cat {
+    margin-top: 200px;
+    animation-name: rotateY, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+
+@keyframes rotateY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotateX {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
